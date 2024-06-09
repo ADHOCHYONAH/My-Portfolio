@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+  <title>{% block title %}Home{% endblock %}</title>
+{% block content %}
+
+<div class="classic" style="  background: url({% static "images/bg1.png" %}); background-repeat: no-repeat; background-size:cover; height:500px">
+    <div class="min">
+        <h1 style="color: green; margin: 5px; padding: 30px;">WELCOME TO ONLINE <br>
+            DIGITAL ZONE
+        </h1>
+    </div>
+<div class="home" style="padding-left: 550px">
+    <img src="{% static 'images/home1.png' %}" class="rounded-circle" alt="Cinque Terre" style="height: 300px; margin: 20px;" >
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+  <title>{% block title %}Portfolio{% endblock %}</title>
+{% block content %}
+
+<div class="h1">
+<h1 style="justify-content: center; color: #0d6efd">My Portfolio</h1>
+</div>
+
+ <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="height: 500px; justify-items: center">
+      <img src="{% static 'images/kot4.png' %}" alt="Los Angeles" class="d-block w-100 " style="overflow: hidden; height: 500px">
+      <div class="carousel-caption">
+        <h3 style="color: green">Mobile Development</h3>
+        <p>Your Solution Mobile Development Partner</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 500px;">
+      <img src="{% static 'images/kot8.png' %}" alt="Chicago" class="d-block  w-100" style="overflow: hidden; height: 500px">
+      <div class="carousel-caption">
+        <h3 style="color: green">Software Maintenance</h3>
+        <p>King of Your Software</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 500px">
+      <img src="{% static 'images/kot3.png' %}" alt="New York" class="d-block  w-100" style="overflow: hidden; height: 500px">
+      <div class="carousel-caption">
+        <h3 style="color: green">Web Development</h3>
+        <p>All Your Web Partners </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+{% endblock %}
+
+

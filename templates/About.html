@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+ <div class="container">
+    <h1 style="display: flex; justify-content: center ">About us</h1>
+
+     <div class="par">
+         <p><span>
+             ADH Solutions was founded by two visionary brothers back in 2023. The ADH Group started out
+             as a small outfit offering Cabling solutions and End user IT support services to clients.
+             With time, we improved our service offering to Managed IT Services, and we continued to add Services
+             as demand from our clients to integrate other services pushed us into the Construction and Power
+             Solutions space.
+
+            ADH then become a dynamic and innovative enterprise that combined technical expertise with a deep-rooted
+             commitment to exceptional service. As a family business, we embody a strong sense of dedication, trust,
+             and shared values that permeate every aspect of our operations. At ADH, we believe that every successful
+             business is built on a foundation of trust, dedication, and exceptional service. We are not just an IT
+             company; we are your partners in technology, committed to delivering unparalleled customer support and
+             ensuring the well-being of our employees.We usually offer variety of languages depending on our customers
+             demand. <br><br><br>
+
+
+         </span></p>
+     </div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'images/python img.png' %}" class="card-img-top" alt="..." STYLE="height: 250px; padding: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">Python</h5>
+        <p class="card-text">Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.</p>
+      </div>
+        <a href="https://docs.python.org/3/tutorial/index.html" style="padding: 10px 130px 30px;">Read more</a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'images/html img.png' %}" class="card-img-top" alt="..." STYLE="height: 200px; padding: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">HTML</h5>
+        <p class="card-text">HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+      </div>
+        <a href="https://www.codecademy.com/resources/docs/html" style="padding: 10px 130px 30px">Read more</a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'images/css img.png' %}" class="card-img-top" alt="..." STYLE="height: 250px; padding: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">CSS</h5>
+        <p class="card-text">CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML).</p>
+      </div>
+        <a href="https://devdocs.io/css/" style="padding: 10px 130px 30px">Read more</a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'images/jsimg.png' %}" class="card-img-top" alt="..." STYLE="height: 200px; padding: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">Javascript</h5>
+        <p class="card-text">Javascript is used by programmers across the world to create dynamic and interactive web content like applications and browsers. JavaScript is so popular that it's the most used programming language in the world, used as a client-side programming language by 97.0% of all.</p>
+      </div>
+        <a href="https://devdocs.io/javascript/" style="padding: 10px 130px 30px">Read more</a>
+    </div>
+  </div>
+</div>
+
+
+ </div>
+{% endblock %}
